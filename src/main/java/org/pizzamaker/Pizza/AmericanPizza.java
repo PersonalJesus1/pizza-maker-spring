@@ -2,7 +2,6 @@ package org.pizzamaker.Pizza;
 
 import org.pizzamaker.Dough.Dough;
 import org.pizzamaker.Topping.Topping;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -13,10 +12,10 @@ public class AmericanPizza implements Pizza {
     private Topping tomatoesTopping;
     private Topping beconTopping;
 
-    public AmericanPizza(@Autowired @Qualifier("yeastDough") Dough yeastDough,
-                         @Autowired @Qualifier("cucumbersTopping") Topping cucumbersTopping,
-                         @Autowired @Qualifier("tomatoesTopping") Topping tomatoesTopping,
-                         @Autowired @Qualifier("beconTopping") Topping beconTopping) {
+    public AmericanPizza( @Qualifier("yeastDough") Dough yeastDough,
+                        @Qualifier("cucumbersTopping") Topping cucumbersTopping,
+                          @Qualifier("tomatoesTopping") Topping tomatoesTopping,
+                          @Qualifier("beconTopping") Topping beconTopping) {
         this.yeastDough = yeastDough;
         this.cucumbersTopping = cucumbersTopping;
         this.tomatoesTopping = tomatoesTopping;

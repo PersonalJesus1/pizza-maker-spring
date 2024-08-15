@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AmericanPizzaFactory implements PizzaFactory {
+
     @Autowired
     private AmericanPizza americanPizza;
 
@@ -14,11 +15,5 @@ public class AmericanPizzaFactory implements PizzaFactory {
     public Pizza createPizza() {
         return americanPizza;
     }
-    public AmericanPizza getAmericanPizza() {
-        return americanPizza;
-    }
-    @Autowired
-    public void setAmericanPizza(AmericanPizza americanPizza) {
-        this.americanPizza = americanPizza;
-    }
+
 }

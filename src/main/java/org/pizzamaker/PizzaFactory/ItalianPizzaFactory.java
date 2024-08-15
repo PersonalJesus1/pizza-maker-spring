@@ -13,11 +13,5 @@ public class ItalianPizzaFactory implements PizzaFactory {
     public Pizza createPizza() {
         return italianPizza;
     }
-    public ItalianPizza getItalianPizza() {
-        return italianPizza;
-    }
-    @Autowired
-    public void setItalianPizza(ItalianPizza italianPizza) {
-        this.italianPizza = italianPizza;
-    }
+
 }
